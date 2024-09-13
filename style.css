@@ -1,0 +1,316 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #ccc;
+}
+
+.center {
+    max-width: 595px;
+    width: 100%;
+    text-align: center;
+    margin: 56px 35% 0px;
+    /* padding: 0 24px; */
+}
+
+.separate {
+    margin-bottom: 7px;
+}
+
+
+/* profile */
+
+#profile {
+    text-align: center;
+    padding: 40px 140px 13px 40px;
+    background-color: black;
+}
+
+#profile img {
+    width: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 50% 50%;
+}
+
+#profile .nome {
+    line-height: 20px;
+    /* 150% */
+    width: 143px;
+    padding-top: 8px;
+    padding-bottom: 7px;
+    font-size: 20px;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    background-color: black;
+}
+
+#profile .profissao {
+    background-color: black;
+    width: 200px;
+    color: white;
+    text-align: left;
+    /* line-height: 11; */
+    font-weight: 300;
+    font-family: "Raleway", sans-serif;
+    font-size: 11px;
+    opacity: 70%;
+    letter-spacing: 1px;
+}
+
+
+/* cv */
+
+section.curriculum {
+    background-color: white;
+    width: 595px;
+    height: 842px;
+    display: flex;
+}
+
+section.bg-preto {
+    width: 240px;
+    height: 842px;
+    background-color: black;
+}
+
+
+/* background preto */
+
+.contatos {
+    padding: 34px 29px 0 40px;
+    background-color: black;
+}
+
+.bold-letter {
+    background-color: black;
+    color: white;
+    text-align: left;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 9px;
+}
+
+.desc-contatos {
+    width: 171px;
+    background-color: black;
+    color: white;
+    opacity: 70%;
+    font-family: "Raleway", sans-serif;
+    font-size: 11px;
+    font-weight: 300;
+    text-align: left;
+    letter-spacing: 0.1px;
+    line-height: 20px;
+}
+
+
+/* skills */
+
+.skills {
+    background-color: black;
+    padding: 30px 30px 0 40px;
+}
+
+.barra-escura {
+    width: 170px;
+    height: 5px;
+    border-radius: 2.5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: relative;
+    z-index: 0;
+    top: 0;
+    left: 0;
+}
+
+.barra-clara {
+    height: 100%;
+    border-radius: 2.5px;
+    background-color: #FFFFFF;
+    opacity: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.ofigma {
+    width: 140px;
+}
+
+.osap {
+    width: 150px;
+}
+
+.ohtml {
+    width: 160px;
+}
+
+.ocss {
+    width: 160px;
+}
+
+.ojava {
+    width: 155px;
+}
+
+.ojavascript {
+    width: 145px;
+}
+
+
+/* background branco */
+
+.perfil {
+    margin: 41px 40px 0 25px;
+    width: 290px;
+    height: 114px;
+    background-color: white;
+}
+
+.perfil h2 {
+    background-color: white;
+    text-align: left;
+}
+
+.bold-giant {
+    height: 15px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+/* .bold-minor {
+    height: 16px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: left;
+    background-color: white;
+} */
+
+.barra {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.texto-esquerda {
+    height: 16px;
+    font-size: 12px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    text-align: left;
+    background-color: white;
+}
+
+.texto-direita {
+    font-family: "Raleway", sans-serif;
+    font-size: 10px;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.7)
+}
+
+.p-normal {
+    font-family: "Raleway", sans-serif;
+    font-size: 11px;
+    text-align: left;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.7)
+}
+
+.perfil p {
+    padding-top: 9px;
+}
+
+.educacao h2 {
+    margin-top: 30px;
+}
+
+.educacao h3 {
+    padding-top: 15px;
+}
+
+.educacao p {
+    padding-top: 8px;
+}
+
+.employment {
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .center {
+        margin: 0 auto;
+        padding: 20px;
+        width: 90%;
+    }
+    section.curriculum {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        background-color: white;
+    }
+    section.bg-preto {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+    #profile {
+        padding: 20px;
+    }
+    #profile img {
+        width: 80px;
+    }
+    .contatos,
+    .skills,
+    .perfil,
+    .employment {
+        width: 100%;
+    }
+    .perfil {
+        width: 100%;
+        margin: 20px 0;
+    }
+    .bold-giant,
+    .bold-letter {
+        width: 100%;
+        font-size: 16px;
+    }
+    .p-normal {
+        width: 100%;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .center {
+        margin: 0;
+        width: 100%;
+    }
+    #profile img {
+        width: 60px;
+    }
+    .contatos,
+    .skills,
+    .perfil,
+    .employment {
+        padding: 10px;
+    }
+    .perfil {
+        margin: 15px 0;
+    }
+    .bold-giant,
+    .bold-letter {
+        font-size: 14px;
+    }
+    .p-normal {
+        font-size: 10px;
+    }
+}
